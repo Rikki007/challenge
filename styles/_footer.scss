@@ -1,0 +1,16 @@
+@use '_components' as *;
+
+.footer {
+    position: relative;
+    max-width: 90rem;
+    min-width: 90vw;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-upline {
+    @include line;
+    top: 0;
+}

@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+/* Roboto - Regular */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Roboto - Bold */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Montserrat - для лого */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin logo {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: $text-color;
+  text-shadow: $text-shadow-color;
+  text-shadow: 0.1rem 0.2rem 0.2rem black;
+  user-select: none;
+}
+
+@mixin title {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  color: $text-color;
+  text-shadow: $text-shadow-color;
+  user-select: none;
+}
+
+@mixin subtitle {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  color: $text-color;
+  text-shadow: $text-shadow-color;
+  user-select: none;
+}
+
+@mixin description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 0.04rem;
+  color: $text-color;
+  text-shadow: $text-shadow-color;
+  user-select: none;
+}
+
+@mixin clue {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 0.8rem;
+  letter-spacing: 0.04rem;
+  color: $text-color;
+  text-shadow: $text-shadow-color;
+  user-select: none;
+}

@@ -1,0 +1,18 @@
+@use '_components' as *;
+@use '_typography' as *;
+@use '_components' as *;
+
+.test-wrapper__question {
+    @include subtitle;
+}
+
+.test-wrapper__answers {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.test-wrapper__answer {
+    @include answer-btn;
+}

@@ -1,0 +1,14 @@
+@use '_components' as *;
+@use '_typography' as *;
+
+.test-wrapper__name {
+    @include title;
+}
+
+.test-wrapper__description {
+    @include description;
+}
+
+.button-block__description {
+    @include clue;
+}
