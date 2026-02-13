@@ -17,6 +17,10 @@
     justify-content: center;
 }
 
+.logo__image {
+    width: 4rem;
+}
+
 .logo__title {
     @include logo;
 }

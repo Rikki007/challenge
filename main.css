@@ -65,6 +65,10 @@
   justify-content: center;
 }
 
+.logo__image {
+  width: 4rem;
+}
+
 .logo__title {
   font-family: "Montserrat";
   font-size: 2rem;
@@ -101,6 +105,10 @@
   background: linear-gradient(to right, rgba(90, 112, 212, 0.5), rgb(162, 124, 202), rgba(90, 128, 210, 0.5));
   box-shadow: 0rem 0 1rem white;
   top: 0;
+}
+
+.link__image {
+  width: 3rem;
 }
 
 .test-wrapper__name {
