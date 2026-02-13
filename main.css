@@ -44,16 +44,17 @@
   background-size: 300% 100%;
   transition: all 0.3s ease-in-out;
 }
-.button:hover {
-  background-position: 100% 0;
-  box-shadow: 0 0.4rem 0.5rem 0 rgba(136, 92, 197, 0.75);
-}
 
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-position: 100% 0;
+    box-shadow: 0 0.4rem 0.5rem 0 rgba(136, 92, 197, 0.75);
+  }
+}
 .header {
   position: relative;
   max-width: 90rem;
   min-width: 90vw;
-  padding: 1rem 0;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -75,7 +76,6 @@
   letter-spacing: 0.1rem;
   color: #fff;
   text-shadow: 0.1rem 0.2rem 0.2rem black;
-  text-shadow: 0.1rem 0.2rem 0.2rem black;
   user-select: none;
 }
 
@@ -88,6 +88,18 @@
   bottom: 0;
 }
 
+@media screen and (max-width: 660px) {
+  .logo {
+    gap: 0.5rem;
+  }
+  .logo__image {
+    width: 2.7rem;
+  }
+  .logo__title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+}
 .footer {
   position: relative;
   max-width: 90rem;
@@ -111,6 +123,14 @@
   width: 3rem;
 }
 
+@media screen and (max-width: 660px) {
+  .footer {
+    padding: 0.5rem 0;
+  }
+  .link__image {
+    width: 2.2rem;
+  }
+}
 .test-wrapper__name {
   font-family: "Roboto";
   font-weight: 400;
@@ -129,6 +149,7 @@
   color: #fff;
   text-shadow: 0.1rem 0.2rem 0.2rem black;
   user-select: none;
+  text-indent: 1.5rem;
 }
 
 .button-block__description {
@@ -141,6 +162,15 @@
   user-select: none;
 }
 
+@media screen and (max-width: 660px) {
+  .test-wrapper__name {
+    font-size: 1.3rem;
+  }
+  .test-wrapper__description {
+    font-size: 1rem;
+    letter-spacing: 0.001rem;
+  }
+}
 .test-wrapper__question {
   font-family: "Roboto";
   font-weight: 400;
@@ -166,6 +196,7 @@
   color: #fff;
   text-shadow: 0.1rem 0.2rem 0.2rem black;
   user-select: none;
+  text-indent: 1.5rem;
   padding: 1rem;
   color: #fff;
   text-align: center;
@@ -177,11 +208,32 @@
   background-size: 300% 100%;
   transition: all 1s ease-in-out;
 }
-.test-wrapper__answer:hover {
-  background-position: 100% 0;
-  box-shadow: 0 0.4rem 0.5rem 0 rgba(136, 92, 197, 0.75);
+@media (hover: hover) and (pointer: fine) {
+  .test-wrapper__answer:hover {
+    background-position: 100% 0;
+    box-shadow: 0 0.4rem 0.5rem 0 rgba(136, 92, 197, 0.75);
+  }
 }
 
+@media screen and (max-width: 660px) {
+  .info-wrapper {
+    height: 30%;
+  }
+  .test-wrapper__question {
+    font-size: 1rem;
+  }
+  .test-wrapper__answers {
+    width: 92vw;
+    height: 70%;
+  }
+  .test-wrapper__description {
+    font-size: 1rem;
+    letter-spacing: 0.001rem;
+  }
+  .test-wrapper__answer {
+    font-size: 1rem;
+  }
+}
 html {
   scroll-behavior: smooth;
   height: 100%;

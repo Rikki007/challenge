@@ -15,11 +15,16 @@
     box-shadow: $shadow;
     background-size: 300% 100%;
     transition: all 0.3s ease-in-out;
+}
 
-    &:hover {
-      background-position: 100% 0;
-      box-shadow: $shadow-hover;
+@media (hover: hover) and (pointer: fine) {
+    .button {
+        &:hover {
+            background-position: 100% 0;
+            box-shadow: $shadow-hover;
+        }
     }
+    
 }
 
 @mixin line {
@@ -48,9 +53,11 @@
     background-size: 300% 100%;
     transition: all 1s ease-in-out;
 
-    &:hover {
-      background-position: 100% 0;
-      box-shadow: $shadow-hover;
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background-position: 100% 0;
+            box-shadow: $shadow-hover;
+        }
     }
 }
 

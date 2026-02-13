@@ -35,8 +35,14 @@ const testQuestions = async (main) => {
 
         main.innerHTML = `
             <section class="test-wrapper">
-                <h2 class="test-wrapper__name">${block.blockName}</h2>
-                <p class="test-wrapper__question">${question.question}</p>
+
+                <div class="info-wrapper">
+                
+                    <h2 class="test-wrapper__name">${block.blockName}</h2>
+                    <p class="test-wrapper__question">${question.question}</p>
+
+                </div>
+                
                 <div class="test-wrapper__answers">
 
                     ${question.answers

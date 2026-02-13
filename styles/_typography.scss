@@ -41,7 +41,6 @@
   letter-spacing: 0.1rem;
   color: $text-color;
   text-shadow: $text-shadow-color;
-  text-shadow: 0.1rem 0.2rem 0.2rem black;
   user-select: none;
 }
 
@@ -73,6 +72,7 @@
   color: $text-color;
   text-shadow: $text-shadow-color;
   user-select: none;
+  text-indent: 1.5rem;
 }
 
 @mixin clue {

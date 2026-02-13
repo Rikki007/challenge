@@ -12,3 +12,15 @@
 .button-block__description {
     @include clue;
 }
+
+@media screen and (max-width: 660px) {
+    
+    .test-wrapper__name {
+        font-size: 1.3rem;
+    }
+
+    .test-wrapper__description {
+        font-size: 1rem;
+        letter-spacing: 0.001rem;
+    }
+}
